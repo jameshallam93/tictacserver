@@ -3,7 +3,7 @@ const app = express()
 
 const cors = require("cors")
 
-const PORT = 3005
+const PORT = process.env.PORT || 3005
 
 
 app.use(express.static("build"))
