@@ -5,7 +5,7 @@ const cors = require("cors")
 
 const PORT = process.env.PORT || 3005
 
-
+app.use(cors)
 app.use(express.static("build"))
 
 app.listen(PORT, ()=>{
